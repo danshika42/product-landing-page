@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.5;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+/* nav */
+
+.container-nav{
+    width: 95%;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+    background-color:#eee ;
+}
+.container-nav img{
+    width: 270px;
+    height: 30px;
+}
+.container-nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+}
+/* letterbox */
+.letterbox{
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
+.letterbox input{
+    margin: 15px 0;
+    padding: 3px 10px;
+    width: 250px;
+}
+.letterbox button{
+    padding: 4px 16px;
+    border-style: none;
+    background-color: #f1c40f;
+    font-weight: bold;
+    font-size: 16px;
+}
+.letterbox button:hover{
+    background-color: darkorange;
+}
+/* about */
+.about-section{
+    margin-top: 80px;
+}
+.container .about{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.about i{
+    color:darkorange;
+    margin-right: 50px;
+}
+/* utube */
+.utube{
+    text-align: center;
+}
+.utube iframe{
+   width: 55%;
+   height: 280px;
+}
+/* boxes */
+.boxes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.box{
+    border: 1px solid black;
+    text-align: center;
+    line-height: 28px;
+    height: 300px;
+    width: 300px;
+}
+.box .heading{
+    background-color: rgb(223, 219, 219);
+    padding: 10px 0;
+    font-weight: 600;
+    /* margin-bottom: 10px; */
+    font-size: 15px;
+}
+.box #money{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.box button{
+    border: none;
+    background-color: #f1c40f;
+    padding: 10px 20px;
+    margin: 15px 0;
+}
+/* footer */
+
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 500;
+}
+footer{
+    background-color:rgb(223, 219, 219) ;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+.footer-content{
+    width: 30%;
+    text-align: center;
+    font-size: 12px;
+  
+}
+@media (max-width:532px){
+    .container-nav ul{
+        flex-direction: column;
+        width: 30%;
+        text-align: center;
+    }
+    .utube iframe{
+        width: 100%;
+    }
+    .about i{
+        display: none;
+    }
+    .about-content{
+        text-align: center;
+    }
+    .boxes{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        margin-bottom: 20px;
+        width: 234px;
+    }
+    .footer-content{
+        width: 55%;
+    }
+}
+@media (max-width:430px){
+    .container-nav{
+        display: block;
+        text-align: center;
+    }
+    .container-nav ul{
+        width: 107%;
+    }
+    
+}
